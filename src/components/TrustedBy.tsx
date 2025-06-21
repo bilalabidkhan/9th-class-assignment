@@ -3,12 +3,9 @@ import Image from 'next/image'
 
 const TrustedBy = () => {
   return (
-    <section className='py-12'>
-      <div className=' px-4 flex justify-start items-center pt-20 pr-16 p-20 pl-16 gap-20 bg-[#F7F7F7]'>
-        <div className='w-80 h-[68px]'>
-          <h5 className='w-80 h-[68px] font-bold text-2xl leading-8'>Trusted by 2000+ companies worldwide.</h5>
-        </div>
-        <div className='container flex items-center flex-col md:flex-row '>
+      <div className='flex flex-col sm:flex-row items-center pt-20 pr-16 p-20 pl-16 gap-10 bg-[#F7F7F7]'>     
+          <h5 data-aos="zoom-in-up" className='w-80 h-[68px] font-bold text-2xl leading-8 text-center'>Trusted by 2000+ companies worldwide.</h5>
+        <div data-aos="zoom-in-up" className='md:flex'>
            <Image src={"/images/logo-1.png"} alt='logo' width={123.8} height={38.52}/>
            <Image src={"/images/logo-2.png"} alt='logo' width={123.8} height={38.52}/>
            <Image src={"/images/logo-3.png"} alt='logo' width={123.8} height={38.52}/>
@@ -16,10 +13,7 @@ const TrustedBy = () => {
            <Image src={"/images/logo-5.png"} alt='logo' width={123.8} height={38.52}/>
            <Image src={"/images/logo-6.png"} alt='logo' width={123.8} height={38.52}/> 
         </div>
-       
-      </div>
-    </section>
+       </div>
   )
 }
-
 export default TrustedBy
